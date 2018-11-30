@@ -17,7 +17,7 @@
 # limitations under the License.
 #
 
-case node.platform
+case node['platform']
 when 'debian','ubuntu'
   %w[tar build-essential].each do |pkg|
     package pkg do
